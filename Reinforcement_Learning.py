@@ -44,8 +44,8 @@ while True:
     delta = 0
     V_new = np.copy(V)
     for s in range(num_states):
-        if s == num_states - 1:
-            continue  # Terminal state
+        #if s == num_states - 1:
+        #    continue  # Terminal state
         next_states = get_next_states(s)
         expected_value = 0
         for s_prime in next_states:
